@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sarala", serif;
+    font-weight: 700;
+    font-style: normal;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #fff9ea;
+}
+
+header{
+ width: 100%;
+ padding: 28px 8%;
+ position: sticky;
+ top: 0;
+ background-color: #fff9ea;
+ z-index: 3;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-logo{
+    font-size: 24px;
+    color: #d63384;
+}
+
+#nav-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    font-size: 20px;
+}
+
+#nav-item a{
+    text-decoration: none;
+    color: #1d1d1dad;
+}
+
+#nav-item.active a{
+    color: #1d1d1dad;
+    border-bottom: 3px solid #d63384;
+}
+
+.btn-default{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d63384;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(0 ,0,0,0.1);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-default:hover{
+    background-color: deeppink;
+}
+
+#mobile-btn{
+    display: none;
+}
+
+#mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 1170px){
+    #nav-list, #navbar .btn-default{
+        display: none;
+    }
+    #mobile-btn{
+        border: none;
+        background-color: transparent;
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    #mobile-menu.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile-nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile-nav-list .nav-iten{
+        list-style: none;
+        text-align: center;
+    }
+}
+
+#home{
+    display: flex;
+    min-width: calc(100vh - 42px);
+}
+
+section{
+    padding: 28px 8%;
+}
+
+#cta{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .titulo{
+    font-size: 2rem;
+    color: hotpink;
+}
+
+#cta .ttitulo span{
+    color: #d63384;
+}
+
+#cta .description{
+    font-size: 1.2rem;
+}
+
+#cta-buttons{
+    display: flex;
+    gap: 24px;
+}
+
+#cta-buttons a{
+    text-decoration: none;
+    color: black;
+}
+
+#phone-button{
+    display: flex;
+    gap: 8px;
+    background-color: #fff;
+    align-items: center;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0 ,0,0,0.1);
+    border-radius: 12px;
+}
+
+.social-media-buttons{
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d1dad;
+    box-shadow: 0px 0px 12px 4px rgba(0 ,0,0,0.1);
+    transition: box-shadow .3s eses ;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0 ,0,0,0.1);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+}
+
+.section-titulo{
+    color: #d63384;
+    font-size: 1.6rem;
+}
+
+.section-subtitulo{
+    font-size: 2.2rem;
+}
+
+#toys{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.jewelry{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 4px rgba(0 ,0,0,.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.toys-heart{
+    position: absolute;
+    background-color: #d63384;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #fff9ea;
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 38px 0px 43px;
+}
+
+.heart-descriçao{
+    color: #434343;
+    text-align: center;
+}
+
+.toys-rate i{
+    color: #d63384;
+}
+
+.toys-price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1170px) {
+    #toys{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .jewelry{
+        width: calc(50% - 12px);
+    }
+    #btn-default{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: #ffe8b4;
+}
+
+#fotter-itens{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+
+#copyrite{
+    color: #1d1d1d;
+    font-size: 500;
+}
+
+@media screen and (max-width: 600px){
+    #fotter-itens{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+#carrosel {
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.slides.s1 {
+    display: flex;
+    width: 800%;
+    transition: margin-left 0.6s ease;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .s1 { margin-left: 0%; }
+#slide2:checked ~ .s1 { margin-left: -120%; }
+#slide3:checked ~ .s1 { margin-left: -200%; }
+#slide4:checked ~ .s1 { margin-left: -300%; }
+#slide5:checked ~ .s1 { margin-left: -400%; }
+#slide6:checked ~ .s1 { margin-left: -500%; }
+#slide7:checked ~ .s1 { margin-left: -600%; }
+#slide8:checked ~ .s1 { margin-left: -700%; }
+
+.nav-carrosel {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+
+.nav-carr {
+    width: 20px;
+    height: 10px;
+    border: 2px solid #d63384;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-carr:hover {
+    background-color: #d63384;
+}
+
+@media screen and (max-width: 768px) {
+    #carrosel {
+        height: 300px;
+    }
+}

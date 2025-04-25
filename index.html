@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta name="description" content="">
+    <title>Sempre Bela Brincos</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <header>
+            <nav id="navbar">
+                <i class="fas fa-gem" id="nav-logo">Sempre Bela Brincos</i>
+                <ul id="nav-list">
+                    <li class="nav-iten active"><a href="#home">Inicío</a></li>
+                    <li class="nav-iten"><a href="#produtos">Produtos</a></li>
+                    <li class="nav-iten"><a href="#avaliação">Avaliação</a></li>
+                </ul>
+                <button class="btn-default">
+                    Peça já o seu!
+                </button>
+
+                <button id="mobile-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+
+            <div id="mobile-menu">
+                <ul id="mobile-nav-list">
+                    <li class="nav-item"><a href="#home">Inicío</a></li>
+                    <li class="nav-item"><a href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a href="#avaliação">Avaliação</a></li>
+                </ul>
+
+                <button class="btn-default">
+                    Peça já o seu!
+                </button>
+            </div>
+    </header>
+
+        <main id="content">
+                <section id="home">
+            <div id="cta">
+                <h1 class="titulo">
+                A beleza chega até
+                <span>Você!</span>
+                </h1>
+            <p class="description">
+                Na Sempre Bela, cada detalhe realça sua beleza. Descubra acessórios elegantes que combinam com seu estilo e fazem você brilhar em qualquer ocasião!
+            </p>
+
+            <div id="cta-buttons">
+                <a href="#" class="btn-default">Ver Catálogo</a>
+
+                <a href="tel:+55555555" id="phone-button">
+                    <button class="btn-default">
+                        <i class="fa-solid fa-phone "></i>
+                    </button>
+                    <span>Ligue agora</span>
+                </a>
+            </div>
+
+            <div class="social-media-buttons">
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+            <s<section id="carrosel">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+                <input type="radio" name="slide" id="slide5">
+                <input type="radio" name="slide" id="slide6">
+                <input type="radio" name="slide" id="slide7">
+                <input type="radio" name="slide" id="slide8">
+            
+                <div class="slides s1">
+                    <div class="slide">
+                        <img src="img/1.png" alt="Brinco em forma de coração">
+                    </div>
+                    <div class="slide">
+                        <img src="img/2.png" alt="Colar de Cruz">
+                    </div>
+                    <div class="slide">
+                        <img src="img/3.png" alt="Pulseira">
+                    </div>
+                    <div class="slide">
+                        <img src="img/4.png" alt="Brinco em forma de sorte">
+                    </div>
+                    <div class="slide">
+                        <img src="img/5.png" alt="Brinco Dourado em forma de sorte">
+                    </div>
+                    <div class="slide">
+                        <img src="img/6.png" alt="Brinco em forma de árvore">
+                    </div>
+                    <div class="slide">
+                        <img src="img/7.png" alt="Brinco">
+                    </div>
+                    <div class="slide">
+                        <img src="img/8.png" alt="Brinco dourado de Nossa Senhora">
+                    </div>
+            
+                    <div class="nav-carrosel">
+                        <label class="nav-carr" for="slide1"></label>
+                        <label class="nav-carr" for="slide2"></label>
+                        <label class="nav-carr" for="slide3"></label>
+                        <label class="nav-carr" for="slide4"></label>
+                        <label class="nav-carr" for="slide5"></label>
+                        <label class="nav-carr" for="slide6"></label>
+                        <label class="nav-carr" for="slide7"></label>
+                        <label class="nav-carr" for="slide8"></label>
+                    </div>
+                </div>
+            </section>
+            
+            
+    </section>
+
+    <section id="menu">
+        <h2 class="section-titulo" id="produtos">Coleção</h2>
+        <h3 class="section-subtitulo">Peças Imperdíveis</h3>
+        <div id="toys">
+            <div class="jewelry">
+                <div class="toys-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                
+                <img src="img/pexels-ashuphotography-1413420 (1).jpg" class="brincoflor" alt="Brinco Floral – Sempre Bela Brincos">
+                <h3 class="heart-descriçao"> Brinco Floral – Sempre Bela Brincos</h3>
+
+            <div class="toys-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(500+)</span>
+            </div>
+            <div class="toys-price">
+                <h4>R$30,00</h4>
+                <button class="btn-default">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+                </div>
+            </div>
+            </div> 
+        
+            <div class="jewelry">
+                <div class="toys-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="img/pexels-pixabay-266621 (1).jpg" class="brincoflor" alt="Brincos Gota Vazada Zircônia - Sempre Bela Brincos">
+                <h3 class="heart-descriçao"> Brincos Gota Vazada Zircônia - Sempre Bela Brincos</h3>
+            
+
+            <div class="toys-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(500+)</span>
+            </div>
+            <div class="toys-price">
+                <h4>R$30,00</h4>
+                <button class="btn-default">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </div>
+            </div>
+        
+
+        
+            <div class="jewelry">
+                <div class="toys-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="img/pexels-say-straight-1400349-2735970.jpg" class="brincoflor" alt="Brincos Flor Esmaltada com Zircônia - Sempre Bela Brincos">
+                <h3 class="heart-descriçao"> Brincos Flor Esmaltada com Zircônia - Sempre Bela Brincos</h3>
+        
+
+            <div class="toys-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(500+)</span>
+            </div>
+            <div class="toys-price">
+                <h4>R$30,00</h4>
+                <button class="btn-default">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </div>
+                </div>
+
+        
+            <div class="jewelry">
+                <div class="toys-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="img/rings-2150772_640.jpg" class="brincoflor" alt="Brincos Gota Vazada Zircônia - Sempre Bela Brincos">
+                <h3 class="heart-descriçao"> Brincos Gota Vazada Zircônia - Sempre Bela Brincos</h3>
+           
+
+            <div class="toys-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(500+)</span>
+            </div>
+            <div class="toys-price">
+                <h4>R$30,00</h4>
+                <button class="btn-default">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </div>
+        </div>
+         <div >
+            <a href="#whatsapp" class="btn-default">Quer ver mais opções?</a>
+         </div>
+    </section>
+
+    
+</main>
+
+<footer>
+    <img src="img/wave (1).svg" alt="footer">
+
+<div id="fotter-itens">
+    <span id="copyrite">
+        &copy Sempre Bela Brincos
+    </span>
+
+    <div class="social-media-buttons">
+        <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+</div>
+</footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
+
