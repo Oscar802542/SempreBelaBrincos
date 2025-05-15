@@ -21,7 +21,7 @@
                     <li class="nav-iten"><a href="#produtos">Produtos</a></li>
                     <li class="nav-iten"><a href="#avaliação">Avaliação</a></li>
                 </ul>
-                <button class="btn-default">
+                <button class="btn-default" id="pedido-button">
                     Peça já o seu!
                 </button>
 
@@ -37,7 +37,7 @@
                     <li class="nav-item"><a href="#avaliação">Avaliação</a></li>
                 </ul>
 
-                <button class="btn-default">
+                <button class="btn-default" id="pedido2-button">
                     Peça já o seu!
                 </button>
             </div>
@@ -55,9 +55,9 @@
             </p>
 
             <div id="cta-buttons">
-                <a href="#" class="btn-default">Ver Catálogo</a>
+                <a class="btn-default" id="vermais-button">Ver Catálogo</a>
 
-                <a href="tel:+55555555" id="phone-button">
+                <a href="tel:+5503195372168" id="phone-button">
                     <button class="btn-default">
                         <i class="fa-solid fa-phone "></i>
                     </button>
@@ -70,12 +70,13 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
 
-                <a href="#">
+                <a id="instagram-semprebela">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
 
-            <s<section id="carrosel">
+            <div class="carrosel-wrapper">
+            <section id="carrosel">
                 <input type="radio" name="slide" id="slide1" checked>
                 <input type="radio" name="slide" id="slide2">
                 <input type="radio" name="slide" id="slide3">
@@ -123,117 +124,92 @@
                     </div>
                 </div>
             </section>
-            
+            </div>
             
     </section>
 
     <section id="menu">
         <h2 class="section-titulo" id="produtos">Coleção</h2>
         <h3 class="section-subtitulo">Peças Imperdíveis</h3>
+      
         <div id="toys">
-            <div class="jewelry">
-                <div class="toys-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                
-                <img src="img/pexels-ashuphotography-1413420 (1).jpg" class="brincoflor" alt="Brinco Floral – Sempre Bela Brincos">
-                <h3 class="heart-descriçao"> Brinco Floral – Sempre Bela Brincos</h3>
-
+          <!-- PRODUTO 1 -->
+          <div class="jewelry">
+            <div class="toys-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="img/pexels-ashuphotography-1413420 (1).jpg" class="brincoflor" alt="Brinco Floral">
+            <h3 class="heart-descriçao">Brinco Floral – Sempre Bela Brincos</h3>
             <div class="toys-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(500+)</span>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
             </div>
             <div class="toys-price">
-                <h4>R$30,00</h4>
-                <button class="btn-default">
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </button>
-                </div>
+              <h4>R$30,00</h4>
+              <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>
             </div>
-            </div> 
-        
-            <div class="jewelry">
-                <div class="toys-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <img src="img/pexels-pixabay-266621 (1).jpg" class="brincoflor" alt="Brincos Gota Vazada Zircônia - Sempre Bela Brincos">
-                <h3 class="heart-descriçao"> Brincos Gota Vazada Zircônia - Sempre Bela Brincos</h3>
-            
-
+          </div>
+      
+          <!-- PRODUTO 2 -->
+          <div class="jewelry">
+            <div class="toys-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="img/pexels-pixabay-266621 (1).jpg" class="brincoflor" alt="Brincos Gota Vazada">
+            <h3 class="heart-descriçao">Brincos Gota Vazada Zircônia - Sempre Bela Brincos</h3>
             <div class="toys-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(500+)</span>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
             </div>
             <div class="toys-price">
-                <h4>R$30,00</h4>
-                <button class="btn-default">
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </button>
+              <h4>R$30,00</h4>
+              <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>
             </div>
+          </div>
+      
+          <!-- PRODUTO 3 -->
+          <div class="jewelry">
+            <div class="toys-heart">
+              <i class="fa-solid fa-heart"></i>
             </div>
-        
-
-        
-            <div class="jewelry">
-                <div class="toys-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <img src="img/pexels-say-straight-1400349-2735970.jpg" class="brincoflor" alt="Brincos Flor Esmaltada com Zircônia - Sempre Bela Brincos">
-                <h3 class="heart-descriçao"> Brincos Flor Esmaltada com Zircônia - Sempre Bela Brincos</h3>
-        
-
+            <img src="img/pexels-say-straight-1400349-2735970.jpg" class="brincoflor" alt="Brincos Flor Esmaltada">
+            <h3 class="heart-descriçao">Brincos Flor Esmaltada com Zircônia - Sempre Bela Brincos</h3>
             <div class="toys-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(500+)</span>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
             </div>
             <div class="toys-price">
-                <h4>R$30,00</h4>
-                <button class="btn-default">
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </button>
+              <h4>R$30,00</h4>
+              <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>
             </div>
-                </div>
-
-        
-            <div class="jewelry">
-                <div class="toys-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <img src="img/rings-2150772_640.jpg" class="brincoflor" alt="Brincos Gota Vazada Zircônia - Sempre Bela Brincos">
-                <h3 class="heart-descriçao"> Brincos Gota Vazada Zircônia - Sempre Bela Brincos</h3>
-           
-
+          </div>
+      
+          <!-- PRODUTO 4 -->
+          <div class="jewelry">
+            <div class="toys-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="img/rings-2150772_640.jpg" class="brincoflor" alt="Anel Dourado">
+            <h3 class="heart-descriçao">Brincos Gota Vazada Zircônia - Sempre Bela Brincos</h3>
             <div class="toys-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(500+)</span>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
             </div>
             <div class="toys-price">
-                <h4>R$30,00</h4>
-                <button class="btn-default">
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </button>
+              <h4>R$30,00</h4>
+              <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>
             </div>
+          </div>
         </div>
-         <div >
-            <a href="#whatsapp" class="btn-default">Quer ver mais opções?</a>
-         </div>
-    </section>
+      </section>
 
     
 </main>

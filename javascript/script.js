@@ -4,7 +4,7 @@ $(document).ready(function () {
         $('#mobile-btn').find('i').toggleClass('fa-x');
     });
     const sections = $('section');
-    const navbar = $('.nav-item');
+    const navbar = $('.nav-iten');
 
     $(window).on('scroll', function() {
         const header= $('header');
@@ -28,5 +28,21 @@ $(document).ready(function () {
         })
         navbar.removeClass('active');
         $(navbar[activesectionIndex]).addClass('active');
+    });
+
+
+    document.getElementById('pedido-button').addEventListener('click', function() {
+        window.open('https://www.instagram.com/thamires8652?igsh=djZrbHR2MG8wNTdn', '_blank');
+    });
+
+    document.getElementById('pedido2-button').addEventListener('click', function() {
+        window.open('https://www.instagram.com/thamires8652?igsh=djZrbHR2MG8wNTdn', '_blank');
+    });
+
+    document.getElementById('vermais-button').addEventListener('click', function() {
+        window.open('https://www.instagram.com/semprebelabrincos?igsh=MWQyNnd6cGRkMGZ5cw==', '_blank');
+    });
+    document.getElementById('instagram-semprebela').addEventListener('click', function() {
+        window.open('https://www.instagram.com/semprebelabrincos?igsh=MWQyNnd6cGRkMGZ5cw==', '_blank');
     });
 });
